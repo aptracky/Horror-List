@@ -17,6 +17,7 @@ mongoose.connect(process.env.API_STRING, {
     .catch(console.error);
 
 const Movie = require('./models/Movie.js');
+//Hello Dev
 
 app.get('/movies', async (req, res) => {
     const movies  = await Movie.find(
